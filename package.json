@@ -18,7 +18,8 @@
         "webpack": "^4.44.1",
         "webpack-cli": "^4.3.0",
         "webpack-dev-server": "^3.11.0",
-        "webpack-merge": "^5.1.2"
+        "webpack-merge": "^5.1.2",
+        "yui": "^3.18.1"
     },
     "scripts": {
         "start:dev": "webpack-dev-server",

@@ -4,7 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        styles: './src/styles/main.scss'
+    },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
@@ -13,15 +16,16 @@ module.exports = {
     //     port: 8080,
     //     static: path.resolve(__dirname, 'dist')
     // },
-    mode: 'development',
 
     module: {
         rules: [
 
-            {
-                test: /\.html$/i,
-                loader: "html-loader",
-            },
+            // {
+            //     test: /\.html$/i,
+            //     use: [{
+            //         loader: "html-loader",
+            //     }],
+            // },
             {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [{
