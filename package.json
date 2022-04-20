@@ -1,0 +1,40 @@
+{
+    "name": "360",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@webpack-cli/serve": "^1.6.1",
+        "css-loader": "^4.2.2",
+        "file-loader": "^6.1.0",
+        "html-loader": "^1.3.0",
+        "html-webpack-plugin": "^4.4.1",
+        "mini-css-extract-plugin": "^0.10.0",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
+        "sass": "^1.26.10",
+        "sass-loader": "^10.0.1",
+        "terser-webpack-plugin": "^4.1.0",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^4.3.0",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^5.1.2"
+    },
+    "scripts": {
+        "start:dev": "webpack-dev-server",
+        "build:dev": "webpack --config webpack.config.dev.js -- progress -- profile",
+        "build:prod": "webpack --config webpack.config.prod.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/valentinilas/360.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/valentinilas/360/issues"
+    },
+    "homepage": "https://github.com/valentinilas/360#readme"
+}
